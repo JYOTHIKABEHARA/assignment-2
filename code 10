@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int fib=0,a[10],n;
+    a[0]=0,a[1]=1;
+    printf("enter your range ");
+    scanf("%d",&n);
+    printf("%d %d",a[0],a[1]);
+    while(n>0)
+    {  fib=a[1]+a[0];
+       printf("%d\t",fib);
+       a[0]=a[1];
+       a[1]=fib;
+       n--;
+    }
+    return 0;
+}
