@@ -1,0 +1,35 @@
+
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+   char s[100];
+  printf("enter your string");
+   scanf("%s",s);
+   int n=strlen(s);
+   int count=0,p=0,i=0,s1=0;
+   int l=0;
+   while(l<n)
+   { if(s[l]>='A'&& s[l]<='Z')
+      count++;
+     else if(s[l]>='a'&& s[l]<='z')
+     p++;
+     else if(s[l]>='1'&& s[l]<='9')
+     i++;
+     else{
+     s1++;
+         
+     }
+     l++;
+     
+   }
+   printf("%d upper case letters\n",count);
+   printf("%d lower case letters\n ",p);
+   printf("%d numbers \n",i);
+   printf("%d other charecters\n",s1);
+     
+   
+
+    return 0;
+}
