@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    char s[1000];
+    int i,c=0,d=0,e=0,f=0,g=0,h=0,i1=0,j=0,k=0,l=0;
+    scanf("%s",s);
+    for(i=0;i<=strlen(s);i++)
+    {
+        if(s[i]=='0')
+        {
+            c++;
+        }
+         else if(s[i]=='1')
+        {
+            d++;
+        }
+        else if(s[i]=='2')
+        { 
+            e++; 
+        }
+        else if(s[i]=='3')
+        {
+            f++;
+        }
+        else if(s[i]=='4')
+        {
+            g++;
+        }
+        else if(s[i]=='5')
+        { 
+            h++;
+        }
+        else if(s[i]=='6')
+        {
+            i1++;
+        }
+        else if(s[i]=='7')
+        {
+            j++;
+        }
+        else if(s[i]=='8')
+        {
+            k++;
+        }
+        else if(s[i]=='9')
+        {
+            l++;
+        }
+        
+    }
+     printf("%d %d %d %d %d %d %d %d %d %d ",c,d,e,f,g,h,i1,j,k,l);
+     
+    return 0;
+}
