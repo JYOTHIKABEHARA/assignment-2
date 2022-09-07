@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int f1=0,f2=1,f,temp,i,a[100],n;
+    for(i=0;i<5;i++)
+    { f=f1+f2;
+     a[i]=f;
+       temp=f2;
+       f2=f;
+       f1=temp;
+       
+    }
+    printf("enter your number");
+    scanf("%d",&n);
+    for(i=0;i<5;i++)
+    {
+        if(n==a[i])
+        printf("%d",n);
+    }
+    return 0;
+}
